@@ -20,17 +20,11 @@ const gridElement = document.querySelector(`.grid`);
 // Una variabile con i numeri delle celle 
 let cellNumbers = 100
 
-// Creo un Array vuota dove inserire al suo internno dei numeri casuali
-const bombs = []
-
-
 // Al clic attraverso addventlistner il bottone deve generare un griglia 
 // Ogni cella ha un numero progressivo, da 1 a 100.
 // Generiamo dei numeri da 1 a 100 
 
 buttonElement.addEventListener('click', function () {
-    // Puliamo la griglia prima di rigenerarla
-    gridElement.innerHTML = '';
 
     // Generiamo la griglia
     for (let i = 1; i <= cellNumbers; i++) {
